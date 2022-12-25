@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import tkinter as tk #создать граф.приложение, в котором задаются расстояния, дистанцию, пеленг и т.п плюс вывод рисунком сонар, тип цели, расстояние и т.п
+
 
 class Start:
     def  __init__(self,time,alpha=60,r=500,fd=80000,fs=20000,period=5,A=1):
@@ -128,6 +128,6 @@ class Echo:
 start=Start(time=0.2)
 (signal,t,fd,fs,A,num,lenk,r)=start.send()
 echo = Echo(signal,t,fd,fs,A,num,r)
-#(signal1,signal2,testx,testy)=echo.submarine()
+(signal1,signal2,testx,testy)=echo.submarine()
 #plt.plot(t,signal)
 #plt.show()
