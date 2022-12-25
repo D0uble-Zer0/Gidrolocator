@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+import tkinter as tk
 
 class Start:
     def  __init__(self,time,alpha=60,r=500,fd=80000,fs=20000,period=5,A=1):
